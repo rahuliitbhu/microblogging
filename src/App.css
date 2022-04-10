@@ -1,38 +1,58 @@
-.App {
+Link{
+  color: black;
+}
+
+.mycard{
+  margin: 2.5%;
+  width: 95%;
+  background-color: rgb(226, 162, 43);
+  
+  
+}
+
+.logincard{
+   padding: 10px;
+   text-align: center;
+   
+}
+
+
+.signupcard{
+  padding: 10px;
   text-align: center;
+  background-color: aquamarine;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profileimg{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  margin:auto 10px ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gallery{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.items{
+  width:20%;
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.home-card{
+  width:500px ;
+  height: max-content;
+  margin: 26px auto;
+  
+}
+
+.input-field{
+   height: 500px;
+   margin: 20px 10%;
+  justify-content: space-around;
+  text-align: center;
 }

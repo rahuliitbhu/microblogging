@@ -1,24 +1,37 @@
 import logo from './logo.svg';
+import React,{Component,useReducer} from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import routes from './Routes';
+import {BrowserRouter,Route,useRoutes} from 'react-router-dom'
+import Profile from './components/Pages/Profile';
+import Signup from './components/Pages/Signup';
+import Login from './components/Pages/Login';
+import {reducer,initialState} from './reducers/compviewManager.js'
 
 function App() {
+
+  
+  const Router=()=>{
+     const element=useRoutes(routes);
+     return(
+       <>
+       <Navbar/>
+       {element}
+       </>
+     )
+
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+  <BrowserRouter>
+        
+        <Router/>
+      
+  </BrowserRouter>
   );
 }
 
